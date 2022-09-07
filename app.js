@@ -4,8 +4,9 @@ const app = express()
 const port = 4500
 
 const url = 'mongodb://localhost/facebook'
-const user = require('../facebookclone-master/routes/users.js')
-const post = require('../facebookclone-master/routes/posts.js')
+const user = require('../FacebookCloneApp/routes/users.js')
+const post = require('../FacebookCloneApp/routes/posts.js')
+
 
 mongoose.connect(url,{ useNewUrlParser: true })
 const con = mongoose.connection
